@@ -64,6 +64,9 @@ Bot.set_bot_commands(
         BotCommand("pokemon", "Start pokemon game", True),
         BotCommand("cancelpokemon", "Cancel Pokemon Game", True),
         BotCommand("blackjack", "Play Blackjack", True),
+        # Commands
+        BotCommand("createrole", "Create post to assign roles to users.", True),
+
         # Levels
         BotCommand("enablelevel", "Enable leveling system", True),
         BotCommand("disablelevel", "Disable leveling", True),
@@ -75,6 +78,7 @@ Bot.set_bot_commands(
         BotCommand("gadget", "Get gadget info", True),
         BotCommand("meaning", "Get meaning of word", True),
         BotCommand("ipinfo", "Get IP Info", True),
+
         # Owner Commands
         BotCommand("restart", "Restart Bot", True),
         BotCommand("eval", "Run Eval", True),

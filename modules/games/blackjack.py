@@ -2,7 +2,7 @@ import contextlib
 import random, os, asyncio
 from . import *
 from database.community import IntializeCommunity
-from swibots import EmbeddedMedia, EmbedInlineField, InlineMarkupRemove
+from swibots import EmbeddedMedia, EmbedInlineField
 from PIL import Image
 from typing import Optional, List, Tuple
 
@@ -249,7 +249,6 @@ async def blackjack(ctx: BotContext[CommandEvent]):
         del GLOBAL[event.user_id][ctx.event.message_id]
     msg = await out_table(
         msg,
-        inline_markup=InlineMarkupRemove(),
         title=result[0],
         description=(
             f"**You {result[1]} ${bet}**\nYour hand: {player_score}\n"
